@@ -27,7 +27,7 @@
 	D;JEQ
 
 	// Blacken the screen
-	    // if i > KBD goto END
+	    // if i >= KBD goto END
 	    (BLACK)
 	    @i
 	    D=M
@@ -58,7 +58,7 @@
 	    @END
 	    D;JGE
 
-	    // RAM[i] = -1
+	    // RAM[i] = 0
 	    @i
 	    A=M
 	    M=0
